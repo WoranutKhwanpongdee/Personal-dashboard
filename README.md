@@ -6,8 +6,6 @@ Personal Dashboard เว็บแอปพลิเคชันที่รว�
 
 https://ex-personal-dashboard.netlify.app
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Personal+Dashboard+Screenshot)
-
 ## ✨ Features
 
 ### 🌤️ สภาพอากาศ
