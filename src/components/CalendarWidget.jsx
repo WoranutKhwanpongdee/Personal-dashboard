@@ -11,18 +11,15 @@ export default function CalendarWidget() {
     const lastDay = new Date(year, month + 1, 0)
     const days = []
     
-    // วันก่อนหน้า
     for (let i = firstDay.getDay(); i > 0; i--) {
       const prevDate = new Date(year, month, -i + 1)
       days.push({ date: prevDate, isCurrentMonth: false })
     }
     
-    // วันในเดือนปัจจุบัน
     for (let i = 1; i <= lastDay.getDate(); i++) {
       days.push({ date: new Date(year, month, i), isCurrentMonth: true })
     }
     
-    // วันถัดไป
     const remainingDays = 42 - days.length
     for (let i = 1; i <= remainingDays; i++) {
       const nextDate = new Date(year, month + 1, i)
@@ -52,28 +49,28 @@ export default function CalendarWidget() {
                       'กรกฎาคม', 'สิงหาคม', 'กันยายน', 'ตุลาคม', 'พฤศจิกายน', 'ธันวาคม']
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-5 transition-all">
+    <div className="glass-card p-6 hover:scale-[1.02] transition-transform duration-300">
       <div className="flex items-center justify-between mb-4">
-        <h2 className="text-xl font-semibold flex items-center gap-2">
-          <Calendar className="w-5 h-5 text-green-500" />
+        <h2 className="text-xl font-semibold flex items-center gap-2 text-white">
+          <Calendar className="w-5 h-5 text-green-300" />
           ปฏิทิน
         </h2>
         <div className="flex gap-2">
-          <button onClick={prevMonth} className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
-            <ChevronLeft className="w-5 h-5" />
+          <button onClick={prevMonth} className="glass-button p-2 text-white">
+            <ChevronLeft className="w-4 h-4" />
           </button>
-          <span className="font-medium">
+          <span className="text-white font-medium px-2">
             {monthNames[currentDate.getMonth()]} {currentDate.getFullYear() + 543}
           </span>
-          <button onClick={nextMonth} className="p-1 hover:bg-gray-100 dark:hover:bg-gray-700 rounded">
-            <ChevronRight className="w-5 h-5" />
+          <button onClick={nextMonth} className="glass-button p-2 text-white">
+            <ChevronRight className="w-4 h-4" />
           </button>
         </div>
       </div>
 
       <div className="grid grid-cols-7 gap-1 mb-2">
         {weekDays.map(day => (
-          <div key={day} className="text-center text-sm font-medium text-gray-500 py-2">
+          <div key={day} className="text-center text-sm font-medium text-white/60 py-2">
             {day}
           </div>
         ))}
@@ -84,10 +81,10 @@ export default function CalendarWidget() {
           <div
             key={idx}
             className={`
-              text-center py-2 rounded-lg text-sm
-              ${!day.isCurrentMonth && 'text-gray-400 dark:text-gray-600'}
-              ${isToday(day.date) && 'bg-blue-500 text-white font-bold'}
-              ${day.isCurrentMonth && !isToday(day.date) && 'hover:bg-gray-100 dark:hover:bg-gray-700'}
+              text-center py-2 rounded-lg text-sm transition-all duration-200
+              ${!day.isCurrentMonth && 'text-white/30'}
+              ${isToday(day.date) && 'bg-gradient-to-r from-blue-500 to-purple-500 text-white font-bold shadow-lg'}
+              ${day.isCurrentMonth && !isToday(day.date) && 'text-white/80 hover:bg-white/10 cursor-pointer'}
             `}
           >
             {day.date.getDate()}

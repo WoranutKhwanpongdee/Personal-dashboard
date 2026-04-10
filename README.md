@@ -2,6 +2,11 @@
 
 Personal Dashboard เว็บแอปพลิเคชันที่รวบรวม Widget ที่จำเป็นสำหรับชีวิตประจำวัน ด้วยดีไซน์แบบ Glassmorphism ที่ทันสมัยและใช้งานง่าย
 
+## 🌐 Live Demo
+
+https://ex-personal-dashboard.netlify.app
+
+![Dashboard Preview](https://via.placeholder.com/800x400?text=Personal+Dashboard+Screenshot)
 
 ## ✨ Features
 
@@ -46,6 +51,7 @@ Personal Dashboard เว็บแอปพลิเคชันที่รว�
 
 ## 🚀 Quick Start
 
+
 ### ติดตั้งและรันโปรเจค
 
 ```bash
@@ -58,3 +64,4 @@ npm install
 
 # รันโปรเจค
 npm run dev
+```
