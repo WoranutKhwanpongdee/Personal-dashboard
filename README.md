@@ -2,7 +2,6 @@
 
 Personal Dashboard เว็บแอปพลิเคชันที่รวบรวม Widget ที่จำเป็นสำหรับชีวิตประจำวัน ด้วยดีไซน์แบบ Glassmorphism ที่ทันสมัยและใช้งานง่าย
 
-![Dashboard Preview](https://via.placeholder.com/800x400?text=Personal+Dashboard+Screenshot)
 
 ## ✨ Features
 
