@@ -1,6 +1,6 @@
 # 🌟 Personal Dashboard
 
-Personal Dashboard เว็บแอปพลิเคชันที่รวบรวม Widget ที่จำเป็นสำหรับชีวิตประจำวัน ด้วยดีไซน์แบบ Glassmorphism ที่ทันสมัยและใช้งานง่าย
+A modern web application that brings together essential daily widgets in one place, featuring a clean and intuitive Glassmorphism UI design.
 
 ## 🌐 Live Demo
 
