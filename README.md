@@ -54,7 +54,7 @@ https://ex-personal-dashboard.netlify.app
 
 ```bash
 # Clone โปรเจค
-git clone https://github.com/your-username/personal-dashboard.git
+git clone https://github.com/WoranutKhwanpongdee/Personal-dashboard
 cd personal-dashboard
 
 # ติดตั้ง dependencies
