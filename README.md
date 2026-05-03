@@ -8,33 +8,33 @@ https://ex-personal-dashboard.netlify.app
 
 ## ✨ Features
 
-### 🌤️ สภาพอากาศ
-- แสดงสภาพอากาศปัจจุบัน
-- ค้นหาสภาพอากาศตามชื่อเมือง
-- แสดงอุณหภูมิ ความชื้น ความเร็วลม
+### 🌤️ Weather
+- Display current weather conditions
+- Search weather by city name
+- Shows temperature, humidity, and wind speed
 
-### 📅 ปฏิทิน
-- แสดงปฏิทินรายเดือน
-- ไฮไลต์วันปัจจุบัน
-- เปลี่ยนเดือนได้
+### 📅 Calendar
+- Monthly calendar view
+- Highlights the current day
+- Navigate between months
 
 ### ✅ To-do List
-- เพิ่ม/ลบ/แก้ไขรายการ
-- Filter ตามสถานะ (ทั้งหมด/ยังไม่ทำ/เสร็จแล้ว)
-- เก็บข้อมูลใน LocalStorage
+- Add, delete, and edit tasks
+- Filter by status (All / Active / Completed)
+- Data persisted using LocalStorage
 
-### 📝 โน้ตด่วน
-- จดบันทึกสั้นๆ
-- แก้ไขและลบโน้ตได้
-- แสดงเวลาที่สร้าง
+### 📝 Quick Notes
+- Create short notes
+- Edit and delete notes
+- Displays creation timestamp
 
-### 💬 คำคมประจำวัน
-- สุ่มคำคมจาก API
-- กด refresh เพื่อเปลี่ยนคำคม
+### 💬 Daily Quotes
+- Fetch random quotes from API
+- Refresh to get a new quote
 
-### 🎨 อื่นๆ
+### 🎨 Others
 - 🌙 Dark/Light Mode
-- 💾 Backup/Restore ข้อมูล (JSON)
+- 💾 Backup & Restore data (JSON)
 - ⌨️ Keyboard Shortcuts
 - 📱 Responsive Design
 
@@ -50,16 +50,16 @@ https://ex-personal-dashboard.netlify.app
 ## 🚀 Quick Start
 
 
-### ติดตั้งและรันโปรเจค
+### Installation & Run
 
 ```bash
-# Clone โปรเจค
+# Clone the repository
 git clone https://github.com/WoranutKhwanpongdee/Personal-dashboard
 cd personal-dashboard
 
-# ติดตั้ง dependencies
+# Install dependencies
 npm install
 
-# รันโปรเจค
+# Start development server
 npm run dev
 ```
